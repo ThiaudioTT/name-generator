@@ -1,3 +1,5 @@
 # Name generator
 
-I dunno
+The api is mainly from this repository:
+
+https://github.com/centraldedados/gerador-nomes
