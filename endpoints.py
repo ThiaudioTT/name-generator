@@ -1,3 +1,7 @@
+"""
+List of endpoints to be used in the program
+"""
+
 _list = [
     'https://gerador-nomes.wolan.net/nome/aleatorio',
     'https://gerador-nomes.wolan.net/nomes/1',
