@@ -8,8 +8,8 @@ def generateName():
     iChooseAPI = random.randint(0, endpoints.length - 1)
     response = requests.get(endpoints._list[iChooseAPI])
 
-    if response.status_code == 200:
-        return response.json()[0]
+    if response.status_code == 200 and response.headers['content-type'] == 'application/json':
+        return str(response.json()[0])
     else:
         print('Error: ' + str(response.status_code))
         return 'Error'
